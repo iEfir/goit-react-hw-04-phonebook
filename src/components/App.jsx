@@ -15,9 +15,9 @@ export function App() {
       { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
     ];
     const contactsFromStorage = localStorage.getItem('contacts');
-    const parseContacts = JSON.parse(contactsFromStorage);
+    const parseStorage = JSON.parse(contactsFromStorage);
 
-    return parseContacts || contacts;
+    return parseStorage || contacts;
   });
 
   const [filter, setFilter] = useState('');
